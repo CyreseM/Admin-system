@@ -1,0 +1,51 @@
+.otherinfo{
+    margin-top: 10px;
+}
+
+.otherinfo form .other1 > fieldset{
+   box-sizing: border-box;
+   border: none;
+   border-top: 1px solid #E8EAEC;
+}
+
+ textarea{
+    height: 70px;
+    width: 100%;
+    resize: none;
+    border: 1px solid #E8EAEC;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+ }
+  .barrier{
+    width: 1px;
+    display: none;
+    background-color: #E8EAEC;
+    height: 35vw;
+    margin: 0 80px;
+}
+@media (min-width: 820px){
+    .otherinfo form{
+        display: flex;
+    }
+    .otherinfo form .other1{
+        max-width: 50vw;
+        width: 100%;
+    }
+    .otherinfo form .other2{
+        max-width: 50vw;
+        width: 100%
+    }
+    .otherinfo form .other1 section{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       gap: 20px;
+    }
+ 
+    .barrier{
+        display: block; 
+    }
+    .percentagesal{
+        text-align: right;
+    }
+}
