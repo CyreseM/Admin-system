@@ -65,16 +65,15 @@ const Personal = () => {
                 </div>
                 <div>
                     <label>Phone<span>*</span></label>
-                    
-                        <PhoneInput
-                            defaultCountry="gh"
-                            value={phone}
-                            onChange={(phone) => setPhone(phone)}
-                        />
-
-
-                  
+                        
+                            <PhoneInput
+                                    inputStyle={{height:'25px'}}
+                                    defaultCountry="gh"
+                                    value={phone}
+                                    onChange={(phone) => setPhone(phone)}
+                                />      
                 </div>
+
                 <div>
                     <label>Digital Address</label>
                     <input type='text' />

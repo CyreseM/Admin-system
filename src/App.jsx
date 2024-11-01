@@ -1,12 +1,20 @@
 import './App.css'
 import { Outlet} from 'react-router'
-import { useNavigate} from 'react-router-dom'
+import { useNavigate,} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRotateForward, faFloppyDisk, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { useState, useEffect} from 'react'
 
 function App() {
   const navigate = useNavigate()
-
+  const [selectedButton, setSelectedButton] = useState('/')
+   
+  const handleNavigation = (path) => {
+    setSelectedButton(path)
+    navigate(path)
+  }
+  
+  
   return (
     <>
     <div style={{minHeight:"100vh"}}>
@@ -14,12 +22,38 @@ function App() {
           <p>Add Employee Details</p>
         </header>
         <div className="container" style={{marginBottom: "20px"}}>
+         
           <nav>
-            <button onClick={()=>{navigate('/')}}>Personal</button>
-            <button onClick={()=>{navigate('organizational')}}>Organizational</button>
-            <button onClick={()=>{navigate('paymentinfo')}}>Payment Info</button>
-            <button onClick={()=>{navigate('otherinfo')}}>Other Info</button>
-            <button onClick={()=>{navigate('generalledger')}}>General Ledger</button>
+          <button
+              className={selectedButton === '/' ? 'focus' : ''}
+              onClick={() => handleNavigation('/')}
+            >
+              Personal
+            </button>
+            <button
+              className={selectedButton === 'organizational' ? 'focus' : ''}
+              onClick={() => handleNavigation('organizational')}
+            >
+              Organizational
+            </button>
+            <button
+              className={selectedButton === 'paymentinfo' ? 'focus' : ''}
+              onClick={() => handleNavigation('paymentinfo')}
+            >
+              Payment Info
+            </button>
+            <button
+              className={selectedButton === 'otherinfo' ? 'focus' : ''}
+              onClick={() => handleNavigation('otherinfo')}
+            >
+              Other Info
+            </button>
+            <button
+              className={selectedButton === 'generalledger' ? 'focus' : ''}
+              onClick={() => handleNavigation('generalledger')}
+            >
+              General Ledger
+            </button>
           </nav>
           <hr />
 

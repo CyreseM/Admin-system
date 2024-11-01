@@ -7,19 +7,39 @@ legend{
   margin-left: calc(50% - 35px - 8px);  
   box-sizing: border-box;
 }
+
+.react-international-phone-input-container{
+  height: 25px;
+  border: 1px solid #e8eaec;
+  border-radius: 2px;
+
+}
+.react-international-phone-input{
+  border: none !important;
+}
+.react-international-phone-country-selector-button{
+  height: 25px !important;
+  border: none !important;
+  margin-right: 2px !important;
+}
 .division {
   width: 1px;
   height: 75vh; 
-  background-color: #DCDFE4;
+  background-color: #E1E2E3;
   position: fixed;
   left: 50%; 
   top: 17%; 
   z-index: 1; 
   display: none;
 }
-
+.phone{
+  height: 25px;
+}
 button{
   cursor: pointer;
+}
+button:active{
+  filter: brightness(50%);
 }
 
 header {
@@ -54,7 +74,6 @@ nav {
 }
 
 nav > button {
-  font-size: 0.6em;
   color: rgb(85, 15, 189);
   background-color: transparent;
   border: none;
@@ -62,8 +81,9 @@ nav > button {
   transition: background-color 1s, width 1s, border 1s ease-in;
 }
 
-nav > button:focus {
-  font-size: 0.6em;
+
+
+.focus{
   color: rgb(153, 153, 153);
   background-color: #EBEDEF;
   width: 70px;
@@ -278,7 +298,8 @@ footer div{
     position: relative;
     bottom: 10px;
   }
-  nav > button:focus{
+   nav > button:focus{ 
+  
     font-size: 0.8em;
     width: auto;
     padding-left: 20px;

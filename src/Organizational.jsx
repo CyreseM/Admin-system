@@ -21,7 +21,7 @@ const Organizational = () => {
                 <legend>Segments</legend>
                 <div>
                     <label>Section</label>
-                    <select name='gender' required>
+                    <select name='section' required>
                             <option value="" disabled selected>Select Section</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
@@ -29,47 +29,51 @@ const Organizational = () => {
                 </div>
                 <div>
                     <label>Department<span>*</span></label>
-                    <select name='gender' required>
+                    <select name='department' required>
                             <option value="" disabled selected>Select Department</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
+                            <option value="finance">Finance</option>
+                            <option value="HR">Human Resource</option>
+                            <option value="cybersecurity">Cyber security</option>
+                            <option value="SI">System Integration</option>
+
                         </select>
                 </div>
                 <div>
                     <label>Division</label>
-                    <select name='gender'>
+                    <select name='division'>
                             <option value="" disabled selected>Select Division</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
+                            <option value="1stdivision">First Division</option>
+                            <option value="2nddivision">Second Division</option>
                         </select>
                 </div>
                 <div>
                     <label>Employee Type<span>*</span></label>
-                    <select name='gender' required>
+                    <select name='employeetype' required>
                             <option value="" disabled selected>Select Employee Type</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
+                            <option value="NSS">National Service Personnel</option>
+                            <option value="Regular">Regular</option>
+                            <option value="Temporary">Temporary</option>
                         </select>
                 </div>
                 <div>
                     <label>Position</label>
-                    <select name='gender' required>
+                    <select name='position' required>
                             <option value="" disabled selected>Select Position</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
+                            <option value="software-engineer">software engineer</option>
+                            <option value="consultant">consultant</option>
                         </select>
                 </div>
                 <div>
                     <label>Unit</label>
                     <select name='gender' required>
                             <option value="" disabled selected>Select Unit</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
+                            <option value="unit1">Unit 1</option>
+                            <option value="unit2">Unit2</option>
                         </select>
                 </div>
                 <div>
                     <label>Location</label>
-                    <select name='gender' required>
+                    <select name='location' required>
                             <option value="" disabled selected>Select Location</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
@@ -86,16 +90,16 @@ const Organizational = () => {
           <fieldset>
               <div>
                     <label>Tax Option</label>
-                    <select name='gender' required>
-                            <option value="" disabled selected>Select Gender</option>
+                    <select name='tax option' required>
+                            <option value="" disabled selected>Select Tax Option</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                         </select>
                 </div>
                 <div>
                     <label>Employment Option</label>
-                    <select name='gender' required>
-                            <option value="" disabled selected>Select Gender</option>
+                    <select name='employment-option' required>
+                            <option value="" disabled selected>Select Employment Option</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                         </select>
@@ -111,16 +115,16 @@ const Organizational = () => {
                 <div style={{display: "grid", gridTemplateColumns:"repeat(2, 1fr)", gap:"20px"}}>
                   <div>
                         <label>Salary Grade</label>
-                        <select name='gender' required>
-                                <option value="" disabled selected>Select Gender</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
+                        <select name='salary-grade' required>
+                                <option value="" disabled selected>Select Salary Grade</option>
+                                <option value="grade1">Male</option>
+                                <option value="grade2">Female</option>
                             </select>
                     </div>
                   <div>
                       <label>Notch</label>
-                      <select name='gender' required>
-                              <option value="" disabled selected>Select Gender</option>
+                      <select name='notch' required>
+                              <option value="" disabled selected>Select Notch</option>
                               <option value="male">Male</option>
                               <option value="female">Female</option>
                           </select>

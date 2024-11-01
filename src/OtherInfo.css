@@ -17,11 +17,14 @@
     padding: 10px;
     box-sizing: border-box;
  }
+ textarea:focus{
+    outline: none;
+ }
   .barrier{
     width: 1px;
     display: none;
-    background-color: #E8EAEC;
-    height: 35vw;
+    background-color: #E1E2E3;
+    height: 38vw;
     margin: 0 80px;
 }
 @media (min-width: 820px){
